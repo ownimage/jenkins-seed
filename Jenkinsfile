@@ -5,8 +5,9 @@ node {
        }
      }"""
 
-     sh returnStdout: true, script: 'pwd'
-     sh returnStdout: true, script: 'ls'
+     echo sh returnStdout: true, script: 'pwd'
+     echo sh returnStdout: true, script: 'ls'
+
 
     jobDsl targets: ['test.groovy'].join('\n'),
            removedJobAction: 'DELETE',
