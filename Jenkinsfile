@@ -5,6 +5,9 @@ node {
        }
      }"""
 
+     shell('pwd')
+     shell('ls')
+
     jobDsl targets: ['jobs/common.groovy'].join('\n'),
            removedJobAction: 'DELETE',
            removedViewAction: 'DELETE',
