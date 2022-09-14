@@ -1,5 +1,8 @@
 node {
-    jobDsl scriptText: 'job("example-2")'
+    jobDsl scriptText: 'job("example-3")
+       steps {
+           shell('echo Hello World!')
+       }'
 
     jobDsl targets: ['jobs/common.groovy'].join('\n'),
            removedJobAction: 'DELETE',
