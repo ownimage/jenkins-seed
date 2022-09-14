@@ -5,8 +5,7 @@ node {
        }
      }"""
 
-     echo(sh returnStdout: true, script: 'pwd')
-     echo(sh returnStdout: true, script: 'ls')
+     echo "Hello world"
 
 
     jobDsl targets: ['test.groovy'].join('\n'),
