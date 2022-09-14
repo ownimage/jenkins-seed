@@ -5,7 +5,8 @@ node {
        }
      }"""
 
-     echo "Hello world"
+     directory = sh returnStdout:true script:"pwd"
+     echo "Hello world $directory"
 
 
     jobDsl targets: ['test.groovy'].join('\n'),
