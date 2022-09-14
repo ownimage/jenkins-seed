@@ -5,7 +5,7 @@ node {
        }
      }"""
 
-     directory = sh returnStdout:true script:"pwd"
+     directory = sh returnStdout:true pwd
      echo "Hello world $directory"
 
 
