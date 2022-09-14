@@ -7,6 +7,7 @@ node {
 
      def directory = sh(script: "pwd", returnStdout:true)
      echo "Hello world $directory"
+     echo sh(script: "ls", returnStdout:true)
 
 
     jobDsl targets: ['test.groovy'].join('\n'),
