@@ -8,7 +8,7 @@ node {
      sh returnStdout: true, script: 'pwd'
      sh returnStdout: true, script: 'ls'
 
-    jobDsl targets: ['jobs/common.groovy'].join('\n'),
+    jobDsl targets: ['test.groovy'].join('\n'),
            removedJobAction: 'DELETE',
            removedViewAction: 'DELETE',
            lookupStrategy: 'SEED_JOB',
