@@ -1,5 +1,8 @@
-job('demo-2') {
-    steps {
-        shell('echo Hello World!')
-    }
+node {
+    jobDsl scriptText: """job('common-3') {
+       steps {
+           shell('echo Hello World!')
+       }
+     }"""
 }
+
